@@ -2,9 +2,7 @@
 
 [![License: Apache](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-The motivation for this project was to create a PWA.
-
-<!-- based around the idea of a social network. It is based around the idea of users and thoughts. With the utilization of MongoDB and Mongoose I created CRUD routes for many different areas that you can see in the video within Insomnia below. I utilized Express.js for my middleware and used Node as the package manager. Potentially in the future I would like to create a simple front end for the API so that I can see the actions happening visually instead of through the API. -->
+The motivation for this project was to create a PWA. By using webpack I created service workers and implemented put and get methods in order to save a users edits to a page. In the future I would like for the page to be more interactive and be able to save and open previous files.
 
 [Functioning Application Link](https://shrouded-plateau-06073.herokuapp.com/)
 
