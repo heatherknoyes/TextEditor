@@ -18,7 +18,7 @@ export const putDb = async (content) => {
 
   const jateDB = await openDB("jate", 1);
 
-  const tx = textEditorDB.transaction("jate", "readwrite");
+  const tx = jateDB.transaction("jate", "readwrite");
 
   const store = tex.objectStore("jate");
 
