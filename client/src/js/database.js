@@ -16,13 +16,13 @@ const initdb = async () =>
 export const putDb = async (content) => {
   console.log("PUT to the database");
 
-  const textEditorDB = await openDB("textEditor", 1);
+  const jateDB = await openDB("jate", 1);
 
-  const tx = textEditorDB.transaction("textEditor", "readwrite");
+  const tx = textEditorDB.transaction("jate", "readwrite");
 
-  const store = tex.objectStore("textEditor");
+  const store = tex.objectStore("jate");
 
-  const request = store.add({ text: content });
+  const request = store.put({ id: 1, value: content });
 
   const result = await request;
   console.log("🚀 - data saved to the database", result);
