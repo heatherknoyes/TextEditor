@@ -20,7 +20,7 @@ export const putDb = async (content) => {
 
   const tx = jateDB.transaction("jate", "readwrite");
 
-  const store = tex.objectStore("jate");
+  const store = tx.objectStore("jate");
 
   const request = store.put({ id: 1, value: content });
 
